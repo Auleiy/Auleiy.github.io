@@ -71,8 +71,18 @@ body {
     height: 180px;
 }
 
+.main-register {
+    width: 480px;
+    height: 215px;
+}
+
 .title {
     font-size: 24pt;
+    margin: 10px 15px 0 0;
+}
+
+div.title {
+    text-align: left;
 }
 
 .input-text {
