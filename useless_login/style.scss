@@ -3,6 +3,9 @@
  * 2024/2/24 16:12
  */
 
+$color-maintheme: #7FD4FF;
+$color-maintheme-dark: #1F5F7F;
+ 
 &:autofill {
     background: #fff;
 }
@@ -17,12 +20,10 @@
 
 * {
     transition: .2s;
-    --color-maintheme: #7FD4FF;
-    --color-maintheme-dark: #1F5F7F;
 }
 
 body {
-    background-image: url(201.jpg);
+    background-image: url(background.jpg);
 }
 
 .container {
@@ -94,10 +95,10 @@ div.title {
     width: 384px;
     outline: none;
     background-color: #00000000;
-}
 
-.input-text:hover {
-    border-bottom-color: var(--color-maintheme);
+    &:hover {
+        border-bottom-color: $color-maintheme;
+    }
 }
 
 .input-btn {
@@ -107,26 +108,26 @@ div.title {
     font-size: 12pt;
     margin-top: 5px;
     padding: 3px;
-}
 
-.input-btn:hover {
-    border-color: var(--color-maintheme);
-}
+    &:hover {
+        border-color: $color-maintheme;
+    }
 
-.input-btn:active {
-    background-color: #0000002f;
+    &:active {
+        background-color: #0000002f;
+    }
 }
 
 a {
     font-weight: bold;
     color: #000;
     text-decoration: none;
-}
 
-a:hover {
-    color: var(--color-maintheme);
-}
+    &:hover {
+        color: var(--color-maintheme);
+    }
 
-a:active {
-    color: var(--color-maintheme-dark)
+    &:active {
+        color: var(--color-maintheme-dark)
+    }
 }
