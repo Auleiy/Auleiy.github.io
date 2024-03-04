@@ -1,0 +1,132 @@
+/*
+ * Code by Auleiy
+ * 2024/2/24 16:12
+ */
+
+&:autofill {
+    background: #fff;
+}
+
+&:-webkit-autofill,
+&:-webkit-autofill:hover,
+&:-webkit-autofill:focus,
+&:-webkit-autofill:active {
+    transition: background-color 5000s;
+    -webkit-text-fill-color: #fff !important;
+}
+
+* {
+    transition: .2s;
+    --color-maintheme: #7FD4FF;
+    --color-maintheme-dark: #1F5F7F;
+}
+
+body {
+    background-image: url(201.jpg);
+}
+
+.container {
+    background-color: #ffffff1f;
+    backdrop-filter: blur(10px);
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 16px #0000004f;
+    animation: container-floating 5s infinite ease-in-out;
+}
+
+.container:hover {
+    animation-play-state: paused;
+}
+
+@keyframes container-floating {
+    0% {
+        top: -2.5%;
+    }
+
+    50% {
+        top: 2.5%;
+    }
+
+    100% {
+        top: -2.5%;
+    }
+}
+
+.bg-noise {
+    background-image: url(noise.png);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -255;
+}
+
+.main-login {
+    width: 480px;
+    height: 180px;
+}
+
+.main-register {
+    width: 480px;
+    height: 215px;
+}
+
+.title {
+    font-size: 24pt;
+    margin: 10px 15px 0 0;
+}
+
+div.title {
+    text-align: left;
+}
+
+.input-text {
+    border: 2px solid #00000000;
+    border-bottom-color: #0000007f;
+    font-size: 12pt;
+    padding: 3px;
+    margin: 5px 0 0 10px;
+    width: 384px;
+    outline: none;
+    background-color: #00000000;
+}
+
+.input-text:hover {
+    border-bottom-color: var(--color-maintheme);
+}
+
+.input-btn {
+    background-color: #00000000;
+    border: 2px solid #0000007f;
+    width: 453px;
+    font-size: 12pt;
+    margin-top: 5px;
+    padding: 3px;
+}
+
+.input-btn:hover {
+    border-color: var(--color-maintheme);
+}
+
+.input-btn:active {
+    background-color: #0000002f;
+}
+
+a {
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-maintheme);
+}
+
+a:active {
+    color: var(--color-maintheme-dark)
+}
