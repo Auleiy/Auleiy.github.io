@@ -1,22 +1,5 @@
-/*
- * Code by Auleiy
- * 2024/2/24 16:12
- */
-
 $color-maintheme: #7FD4FF;
 $color-maintheme-dark: #1F5F7F;
- 
-&:autofill {
-    background: #fff;
-}
-
-&:-webkit-autofill,
-&:-webkit-autofill:hover,
-&:-webkit-autofill:focus,
-&:-webkit-autofill:active {
-    transition: background-color 5000s;
-    -webkit-text-fill-color: #fff !important;
-}
 
 * {
     transition: .2s;
@@ -69,12 +52,12 @@ body {
 
 .main-login {
     width: 480px;
-    height: 180px;
+    height: 202px;
 }
 
 .main-register {
     width: 480px;
-    height: 215px;
+    height: 240px;
 }
 
 .title {
@@ -122,12 +105,13 @@ a {
     font-weight: bold;
     color: #000;
     text-decoration: none;
+    cursor: pointer;
 
     &:hover {
-        color: var(--color-maintheme);
+        color: $color-maintheme;
     }
 
     &:active {
-        color: var(--color-maintheme-dark)
+        color: $color-maintheme-dark;
     }
 }
