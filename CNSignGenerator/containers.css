@@ -1,0 +1,12 @@
+.sign-container {
+    border-radius: 60px;
+}
+
+.icon-container * {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.icon-container {
+    display: table;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../variables.css">
+    <link rel="stylesheet" href="../containers.css">
+    <link rel="stylesheet" href="./exprsway-sign-display.css">
+    <link rel="stylesheet" href="./arrow.css">
+
+    <title>GB5768.2-2022 箭头 a</title>
+</head>
+
+<body style="--beam-width: 0.2;">
+    <div class="icon-container">
+        <div class="arrow-body arrow-a-beam"></div>
+        <img src="arrow-a.svg" class="arrow-body arrow-a-head">
+    </div>
+    <span>箭头柱长度：</span>
+    <input type="range" step=".01" value="0.2" min="0.2" max="2" id="beam-width-arg-input">
+    <span id="beam-width-arg-display">0.2</span>
+    <script src="arrow-a-args.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+html {
+    --scale: 1;
+}
+
+.arrow-a-beam {
+    top: calc(36px * var(--scale));
+    width: calc(100px * (var(--beam-width) - 0.2) * var(--scale));
+    height: calc(28px * var(--scale));
+}
+
+.arrow-body {
+    color: var(--color-fg);
+    position: relative;
+}
+
+div.arrow-body {
+    background-color: var(--color-fg);
+}
+
+.arrow-a-head {
+    height: calc(100px * var(--scale));
+}
