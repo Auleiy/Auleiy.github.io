@@ -1,0 +1,8 @@
+div.image-center>* {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+div.content {
+    border: 1px solid black;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        function copy(str) {
+            navigator.clipboard.writeText(str)
+        }
+
+        function copyIndex(element) {
+            var id = element.parentElement.id
+            copy(window.location.href.slice(0, window.location.href.indexOf('#')) + '#' + id)
+        }
+    </script>
+
+    <title>老鳖哲学</title>
+</head>
+
+<body>
+    <div class="image-center">
+        <img src="cover.svg" width="256px" style="border: 2px solid black;" />
+        <div>
+            <span style="font-size: xx-large;">脖子哲学</span><br>
+            <span>每日刊登一条脖子哲学</span><br>
+            <span>作者：邢浩南</span>
+        </div>
+    </div>
+    <div class="content" id="2024/9/12">
+        <span>2024/9/12</span>
+        <input type="button" value="§" onclick="copyIndex(this)"><br>
+        <span style="font-size: x-large;">自以为是的人就像老鳖的脖子，看起来厚实，有学识，实际上就是个脆弱且没用的脂肪堆。</span><br>
+        <span>（Auleiy补充）脖子里脂肪在运动时会转换为糖类，所以装起来还很唐</span>
+    </div>
+</body>
+
+</html>
