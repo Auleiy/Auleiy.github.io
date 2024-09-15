@@ -12,7 +12,6 @@ function init() {
     var s = loadFile("content.json");
     var o = JSON.parse(s);
     for (var v in o) {
-        console.log(v + ": " + o[v].content);
         Segment(o[v].content, o[v].interpretation, o[v].comment, v);
     }
 }

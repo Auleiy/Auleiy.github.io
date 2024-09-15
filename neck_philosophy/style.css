@@ -33,7 +33,7 @@ div.paper-container {
 }
 
 div.content-description {
-    margin-top: 1em;
+    margin-top: .5em;
 }
 
 div.title {
@@ -59,4 +59,10 @@ input.copylink-btn:hover {
 
 input.copylink-btn:active {
     border-color: #BF7CBF;
+}
+
+hr {
+    border-color: black;
+    margin-top: .5em;
+    margin-bottom: 0;
 }
