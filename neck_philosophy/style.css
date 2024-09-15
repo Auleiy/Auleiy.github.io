@@ -7,6 +7,11 @@ body {
     image-rendering: pixelated;
 }
 
+html,
+body {
+    scroll-behavior: smooth;
+}
+
 div.image-center>*,
 div.header-container>* {
     vertical-align: middle;
@@ -26,14 +31,14 @@ div.paper-container {
     margin-bottom: 64px;
     margin-left: 10%;
     margin-right: 10%;
-    background-color: #FAEBD77F;
+    background-color: #FAEBD79F;
     backdrop-filter: blur(4px);
     box-shadow: 0px 0px 32px -8px black;
     border-radius: 32px;
 }
 
 div.content-description {
-    margin-top: 1em;
+    margin-top: .5em;
 }
 
 div.title {
@@ -46,17 +51,30 @@ span.title {
 }
 
 input.copylink-btn {
+    margin-left: 1em;
+}
+
+input.jumplast-btn {
+    width: 100%;
+}
+
+input.btn {
     transition: .1s;
     background-color: transparent;
     border: 2px solid #0000002F;
     border-radius: 4px;
-    margin-left: 1em;
 }
 
-input.copylink-btn:hover {
+input.btn:hover {
     border-color: #FFBFFF;
 }
 
-input.copylink-btn:active {
+input.btn:active {
     border-color: #BF7CBF;
+}
+
+hr {
+    border-color: black;
+    margin-top: .5em;
+    margin-bottom: 0;
 }

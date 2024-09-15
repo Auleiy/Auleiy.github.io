@@ -23,6 +23,8 @@
                 <span>作者：脖拉图</span>
             </div>
         </div>
+        <a id="jump-latest-link" href=""><input id="jump-latest-button" type="button" value=""
+                class="jumplast-btn btn"></a>
 
         <script>
             init();
@@ -30,6 +32,8 @@
         <script src="/clipboard.js-master/dist/clipboard.js"></script>
         <script>
             var clipboard = new ClipboardJS('.copylink-btn');
+            document.getElementById("jump-latest-link").href = getLatestLink();
+            document.getElementById("jump-latest-button").value = "最新（" + getLastTimeOffset() + "更新）"
         </script>
     </div>
 </body>
