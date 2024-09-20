@@ -19,10 +19,16 @@ div.header-container>* {
 }
 
 div.content {
-    border: 1px solid black;
+    border: 2px solid black;
     padding: 16px;
     margin-top: 8px;
     margin-bottom: 8px;
+    border-radius: 8px;
+    transition: .3s;
+}
+
+div.content:hover {
+    background-color: #FAEBD77F;
 }
 
 div.paper-container {
@@ -59,22 +65,70 @@ input.jumplast-btn {
 }
 
 input.btn {
-    transition: .1s;
+    transition: .3s;
     background-color: transparent;
     border: 2px solid #0000002F;
     border-radius: 4px;
+    font-size: 16pt;
 }
 
 input.btn:hover {
     border-color: #FFBFFF;
+    background-color: #FAEBD7AF;
 }
 
 input.btn:active {
     border-color: #BF7CBF;
+    background-color: #FAEBD7FF;
 }
 
 hr {
-    border-color: black;
     margin-top: .5em;
     margin-bottom: 0;
+    border: 0;
+}
+
+hr.black {
+    background-color: black;
+    height: 2px;
+}
+
+hr.half {
+    height: 0px;
+}
+
+div.copy-suc-alert {
+    position: fixed;
+    top: 4pt;
+    right: -256pt;
+    width: 256pt;
+    height: 36pt;
+    background-color: bisque;
+    border-radius: 16pt 0 0 16pt;
+    box-shadow: 0px 0px 32px -8px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.copy-suc-alert>span {
+    font-size: larger;
+}
+
+@keyframes copy-suc-alert-anim {
+    0% {
+        right: -256pt;
+    }
+
+    10% {
+        right: 0pt;
+    }
+
+    90% {
+        right: 0pt;
+    }
+
+    100% {
+        right: -256pt;
+    }
 }
