@@ -2,7 +2,7 @@ function Segment(text, interpretation, comment, date) {
     document.writeln("<div class=\"content\" id=\"" + date + "\">");
     document.writeln("<div class=\"header-container\">")
     document.writeln("<span>" + date + "</span>");
-    document.writeln("<input class=\"copylink-btn btn\" type=\"button\" value=\"§\" title=\"复制跳转链接\" data-clipboard-text=\"" + window.location.href.slice(0, window.location.href.indexOf('#')) + '#' + date + "\" onclick=\"alert(\'复制成功！\')\"><br>");
+    document.writeln("<input class=\"copylink-btn btn\" type=\"button\" value=\"§\" title=\"复制跳转链接\" data-clipboard-text=\"" + window.location.href.slice(0, window.location.href.indexOf('#')) + '#' + date + "\" onclick=\"alertElement()\"><br>");
     document.writeln("</div>")
     document.writeln("<span style=\"font-size: x-large;\">" + text + "</span><br>");
     document.writeln("<div class=\"content-description\">");
@@ -26,8 +26,14 @@ function Segment(text, interpretation, comment, date) {
 }
 
 function alertElement() {
-    var a = [];
-    a.push(
-        document.createElement("")
-    )
+    var c = document.getElementsByClassName("copy-suc-alert")[0];
+
+    c.style.animation = "copy-suc-alert-anim 3s 1 ease-in";
+    c.addEventListener("animationend", function () {
+        this.style.animation = ""
+    })
+}
+
+function cl(id) {
+    return document.getElementsByClassName(id)
 }
