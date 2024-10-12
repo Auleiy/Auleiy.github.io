@@ -1,10 +1,9 @@
-# 我的主页
-好吧，你也来了
-其实你账号和密码我就是知道我也没地方存放
-刚才只是开玩笑的（
-不过真有的话，我绝对不会让你删！
+# Auleiy 的主页！！！
+如果你是我的同学，那么欢迎！
 
-其实这只是一个练手的，我懒得写主页就先拿这个替换着
-如果可以的话，我将会真的做一个主页，然后这个登录页面就扔到一个文件夹里面，主页里面可以前往
-
-里面的样式表是scss格式的，css是由sass生成的
+此页面下有许多我的测试页面和分页面，这个作为一个向导存在。
+## 页面向导
+- [中式路牌生成器 <font size=1>CNSignGenerator</font>](./CNSignGenerator/index.html) 一个可以生成中式道路向导标志牌的工具。*Alpha 1.0.0*
+- [《脖子哲学》 <font size=1>neck_philosophy</font>](./neck_philosophy/index.html) 每天刊登一条脖子哲学。*Program: 1.3.0a, Content: 20241012a*
+- [OP外号 <font size=1>op</font>](./op/index.html) 喜报：李文婷共有以下外号。*1.0.0, **archived***
+- [登录页面 <font size=1>useless_login</font>](./useless_login/index.html) 假的登录页面，**这个网站最早的页面**。*1.3.0, **archived***
